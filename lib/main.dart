@@ -11,26 +11,24 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter App',
       home: MyHomePage(),
-
     );
-  }
+  } //test
 }
 
 class MyHomePage extends StatefulWidget {
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Flutter App'),
       ),
-      body: GridView.count(childAspectRatio: 1.5,
+      body: GridView.count(
+        childAspectRatio: 1.5,
         crossAxisCount: 2,
         children: [
           _buildItem('Maaş', Icons.attach_money),
@@ -76,7 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-
     );
   }
 }
